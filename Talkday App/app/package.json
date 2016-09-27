@@ -1,0 +1,20 @@
+{
+    "name": "tns-template-tab-navigation",
+    "main": "app.js",
+    "version": "2.1.0",
+    "author": "Telerik <support@telerik.com>",
+    "description": "Nativescript tab-navigation project template",
+    "license": "BSD",
+    "keywords": [
+        "telerik",
+        "mobile",
+        "nativescript",
+        "{N}",
+        "tns",
+        "appbuilder",
+        "template"
+    ],
+    "repository": {
+        "url": "https://github.com/NativeScript/NativeScript/commit/f201465fb38f23772110776168a99aaf8c223ac8"
+    }
+}

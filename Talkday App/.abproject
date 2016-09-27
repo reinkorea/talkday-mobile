@@ -1,0 +1,28 @@
+{
+  "ProjectName": "Talkday App",
+  "ProjectGuid": "4c183238-b914-47b5-9566-fe3fb4d38e99",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.TalkdayApp",
+  "DisplayName": "Talkday App",
+  "Author": "",
+  "Description": "Talkday App",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{F0A65104-D4F4-4012-B799-F612D75820F6}",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "FrameworkVersion": "2.2.0",
+  "Framework": "NativeScript"
+}
