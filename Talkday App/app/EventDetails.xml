@@ -1,0 +1,18 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Event Information" id="abEventDetails">
+    </ActionBar>
+    <StackLayout orientation="vertical">
+		<Image id="imgEventPhoto" class="event-photo" src="~/banner.png" />
+        <Label id="lblEventName" class="residentdetails-title" text="" />
+        <Label id="lblEventDesc" class="event-desc-content" text="" textWrap="true" />
+		<StackLayout orientation="horizontal">
+        	<Label id="lblEventType" class="events-tag-label" text="" />
+        	<Label id="lblEventCategory" class="events-tag-label" text="" />
+		</StackLayout>
+        <StackLayout orientation="horizontal" class="event-controls-wrapper">
+            <Button id="btnRSVP" text="RSVP" class="standard-button" />
+			<Button id="btnFeedback" text="Feedback" class="standard-button" />
+			<Button id="btnShare" text="Share" class="standard-button" />
+        </StackLayout>
+    </StackLayout>
+</Page>

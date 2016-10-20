@@ -12,9 +12,12 @@
     "1",
     "2"
   ],
-  "iOSBackgroundMode": [],
+  "iOSBackgroundMode": [
+    "location"
+  ],
   "ProjectTypeGuids": "{F0A65104-D4F4-4012-B799-F612D75820F6}",
   "AndroidPermissions": [
+    "android.permission.ACCESS_FINE_LOCATION",
     "android.permission.INTERNET"
   ],
   "DeviceOrientations": [
@@ -23,6 +26,6 @@
   ],
   "AndroidHardwareAcceleration": "true",
   "iOSStatusBarStyle": "Default",
-  "FrameworkVersion": "2.2.0",
+  "FrameworkVersion": "2.3.0",
   "Framework": "NativeScript"
 }

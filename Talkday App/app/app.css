@@ -1,12 +1,279 @@
+.awesome-icon {
+    font-family: "FontAwesome";
+    font-size: 48;
+}
+
+.icon {
+   font-family: 'icomoon';
+   font-size: 48;
+}
+
+.tabview {
+    color:#0078ff;
+}
+
 .tab-content {
-    vertical-align: center;
+    vertical-align: top;
     color: #808080;
     font-size: 24;
     padding: 20;
 }
 
+.listing-tab-content {
+    vertical-align: top;
+    background-color: #fff;
+    color: #000;
+    font-size: 24;
+
+}
+
 .title {
+    font-family: Arial;
+    font-weight: 300;
     margin: 0 0 10 0;
+    font-size: 24;
+    color: #3c3c3c;
+}
+
+.login-title {
+    font-family: Arial;
+    font-weight: 300;
+    text-align: center;
     font-size: 32;
     color: #3c3c3c;
+}
+
+.form-label {
+    font-family: Arial;
+    margin-top: 20;
+    font-weight: 300;
+    text-align: center;
+    font-size: 26;
+    color: #3c3c3c;
+}
+
+.login-textfield {
+    font-size: 32;
+    font-family: Calibri;
+    font-weight: 100;
+    color: #000;
+    padding: 5;
+    border-color: #b2b2b2;
+    border-width: 1;
+    border-style: solid;
+    margin: 5;
+    opacity: 0;
+    border-radius: 5;
+}
+
+.login-button {
+    background-color: #20b61d;
+    color: #fff;
+    font-size: 20;
+    font-family: Calibri;
+    font-weight: 100;
+    padding: 10 0;
+    margin: 5;
+    height: 40;
+    opacity: 0;
+    border-radius: 5;
+}
+
+.action-label {
+    letter-spacing: 0.5;
+    color: white;
+    font-weight: bold;
+}
+
+.action-bar {
+    background-color: #0078ff;
+    color: white;
+}
+
+.login-screen-container {
+    vertical-align: center;
+    margin: 20;
+}
+
+.addnews-button {
+    border-style: solid;
+    border-width: 1;
+    border-color: #20b61d;
+    border-radius: 5;
+    color: #20b61d;
+    font-size: 22;
+    width: 96%;
+    padding: 8;
+    margin: 10;
+}
+
+.newslist {
+    height: 100%;
+}
+
+.newslist-wrapper {
+    vertical-align: top;
+}
+
+.newslist-item-wrapper {
+    min-height: 50;
+	margin: 5;
+}
+
+.newslist-content {
+    margin: 5;
+    width: 75%;
+    font-size: 18;
+    font-family: Arial;
+}
+
+.newslist-img {
+    margin: 5;
+    width: 25%;
+}
+
+.list-button {
+    background-color: #20b61d;
+    color: white;
+    font-size: 16;
+    width: 25%;
+    padding: 5;
+}
+
+.newsdetails-content {
+    margin: 5;
+}
+
+.newsdetails-date-content {
+    margin: 5;
+    font-size: 14;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contactinfo-title {
+    font-size: 24;
+    font-weight: bold;
+    font-family: Arial;
+    color: black;
+}
+
+.contactinfo-content {
+    margin: 5 0;
+    font-size: 14;
+    font-family: Arial;
+    color:#808080;
+    width: 100%;
+}
+
+.contactinfo-label {
+    margin: 5;
+    text-align: left;
+    font-size: 14;
+    font-weight: bold;
+    font-family: Arial;
+    color:#808080;
+}
+
+.residentdetails-title {
+    font-size: 24;
+    font-weight: bold;
+    font-family: Arial;
+    margin: 5;
+    color: black;
+}
+
+.residentdetails-content {
+    margin: 5;
+    font-size: 14;
+    font-family: Arial;
+    color:#808080;
+}
+
+.residentdetails-residentialwrapper {
+    margin: 5;
+    text-align: left;
+}
+
+.bookings-tab-content {
+    vertical-align: top;
+    background-color: #fff;
+    color: #000;
+    font-size: 18;
+
+}
+
+.dropdown-control {
+    padding: 3;
+    margin: 5;
+    font-size: 18;
+    background-color: #5a5a5a;
+    color: #000;
+    border-style: solid;
+    border-width: 1;
+    border-color: #808080;
+    border-radius: 4;
+}
+
+.dropdown-wrapper {
+    margin: 10;
+}
+
+.label {
+    margin: 5;
+}
+
+.booking-textfield {
+    font-size: 32;
+    font-family: Calibri;
+    font-weight: 100;
+    color: #000;
+    padding: 5;
+    border-color: #b2b2b2;
+    border-width: 1;
+    border-style: solid;
+    margin: 5;
+    opacity: 0;
+    border-radius: 5;
+}
+
+.event-controls-wrapper {
+	width: 100%;
+	horizontal-align: center;
+}
+
+.standard-button {
+	padding: 8 15;
+	background-color: #20b61d;
+    color: white;
+    font-size: 20;
+	margin: 10;
+	border-radius: 8;
+}
+
+.event-photo {
+	width: 100%;
+	height: auto;
+}
+
+.event-desc-content {
+	margin: 5;
+    font-size: 17;
+    font-family: Arial;
+    color:#808080;
+}
+
+.events-tag-label {
+	margin: 2;
+	font-size: 13;
+	padding: 3;
+	background-color: #999999;
+	color: #fff;
+	border-radius: 2;
+	border: 1px solid #aaa;
+}
+
+.map-view {
+	width: 100%;
+	height: 100%;
 }

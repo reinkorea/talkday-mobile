@@ -1,22 +1,66 @@
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
-  <TabView>
-    <TabView.items>
-      <TabViewItem title="First">
-        <TabViewItem.view>
-          <StackLayout class="tab-content">
-            <Label text="First View" class="title"/>
-            <Label text="This is the content of the first tab." textWrap="true"/>
-          </StackLayout>
-        </TabViewItem.view>
-      </TabViewItem>
-      <TabViewItem title="Second">
-        <TabViewItem.view>
-          <StackLayout class="tab-content">
-            <Label text="Second View" class="title"/>
-            <Label text="This is the content of the second tab." textWrap="true"/>
-          </StackLayout>
-        </TabViewItem.view>
-      </TabViewItem>
-    </TabView.items>
-  </TabView>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" xmlns:map="nativescript-mapbox" xmlns:calendar="nativescript-telerik-ui-pro/calendar">
+	<ActionBar class="action-bar">
+        <NavigationButton visibility="collapsed"/>
+        <StackLayout orientation="horizontal"
+            ios:horizontalAlignment="center"
+            android:horizontalAlignment="left">
+            <Label text="TALKDAY APP"  class="action-label"></Label>
+        </StackLayout>
+    </ActionBar>
+	<TabView id="tabView" loaded="tabViewLoaded">
+    	<TabView.items>
+			<TabViewItem title="Feeds">
+        		<TabViewItem.view>
+    				<StackLayout class="tab-content">
+						<Label text="Second View" class="title"/>
+            			<Label text="This is the content of the second tab." textWrap="true"/>
+        			</StackLayout>
+        		</TabViewItem.view>
+    		</TabViewItem>
+    		<TabViewItem title="Nearby">
+				<TabViewItem.view>
+					<ContentView class="map-view">
+						<map:Mapbox id="mbEventsNearby"
+							accessToken="pk.eyJ1Ijoic2ZvcnNoZXJtYW4iLCJhIjoiY2l1aHJ6b2x4MDB5MDJ4bnkwY3Z0N3IwNiJ9.5ttvHXBqYqvnZOLLBa2Btw"
+							mapStyle="light"
+							zoomLevel="13"
+							latitude="1.2990624"
+							longitude="103.8585374"
+							showUserLocation="true" mapReady="onMapReady">
+						</map:Mapbox>
+					</ContentView>
+        		</TabViewItem.view>
+    		</TabViewItem>
+			<TabViewItem title="Events">
+				<TabViewItem.view>
+					<ListView items="{{ eventsList }}" id="eventsList" class="newslist" itemTap="eventItemTapped">
+						<ListView.itemTemplate>
+							<GridLayout rows="*,*,*,*,*" class="newslist-item-wrapper">
+								<Label text="{{ eventName }}" row="0" horizontalAlignment="left" class="contactinfo-title" textWrap="true"/>
+								<Label text="{{ _eventCategory.categoryName }}" horizontalAlignment="left" class="contactinfo-content" row="1" />
+								<Label text="{{ _eventType.typeName }}" horizontalAlignment="left" class="contactinfo-content" row="2" />
+								<Label text="{{ eventDesc }}" textWrap="true" horizontalAlignment="left" class="contactinfo-content" row="3" />
+								<Label text="{{ displayStartDate }}" horizontalAlignment="right" class="contactinfo-content" row="4" />
+							</GridLayout>
+						</ListView.itemTemplate>
+					</ListView>
+				</TabViewItem.view>
+			</TabViewItem>
+    		<TabViewItem title="Schedule">
+        		<TabViewItem.view>
+        			<StackLayout class="bookings-tab-content" id="bookingsWrapper">
+                        <calendar:RadCalendar id="calEvents" viewMode="Month" transitionMode="Stack" />
+                    </StackLayout>
+        		</TabViewItem.view>
+    		</TabViewItem>
+			<!--<TabViewItem title="Profile">
+        		<TabViewItem.view>
+          			<StackLayout class="tab-content">
+            			<Label text="Second View" class="title"/>
+            			<Label text="This is the content of the second tab." textWrap="true"/>
+          			</StackLayout>
+        		</TabViewItem.view>
+    		</TabViewItem>-->
+    	</TabView.items>
+  	</TabView>
 </Page>

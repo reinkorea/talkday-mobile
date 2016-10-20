@@ -1,6 +1,15 @@
 {
+    "nativescript": {
+        "nativescript-teststudio-variables": {
+            "IOS_APP_URL": "talkdayapp"
+        }
+    },
     "dependencies": {
-        "tns-core-modules": "2.2.1"
+        "tns-core-modules": "2.3.0",
+        "nativescript-telerik-ui-pro": "file:./nativescript-ui-pro.tgz",
+        "nativescript-plugin-livepatch": "1.0.1",
+        "nativescript-teststudio": "1.1.3",
+        "nativescript-mapbox": "2.0.0"
     },
     "devDependencies": {}
 }
